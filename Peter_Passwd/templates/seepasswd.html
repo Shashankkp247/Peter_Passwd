@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    See Passwds
+{% endblock %}
+
+{% block body %}
+    <p>
+
+    </p>
+
+    <table class="table table-striped">
+       <thead>
+           <tr>
+               <th>Site/APP name</th>
+               <th>Username</th>
+               <th>Passwd</th>
+            </tr>
+           <tbody>
+               {% for passwd in passwds %}
+               <tr>
+                   <td> {{ passwd["title"] }} </td>
+                   <td> {{ passwd["username"] }} </td>
+                   <td> {{ passwd["passwd"] }} </td>
+               </tr>
+               {% endfor %}
+            </tbody>
+   </table>
+
+    <p></p>
+    <h6><u><a href="/">&#x21AA;Return to Home page</a></u></h6>
+    <p></p>
+    <h6><u><a href="/passwd">&#x21AA;Return to Passwd Manager</a></u></h6>
+    <p></p>
+{% endblock %}

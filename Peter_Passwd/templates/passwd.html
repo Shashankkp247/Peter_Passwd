@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Passwd Manager
+{% endblock %}
+
+{% block body %}
+
+    <style>
+    table, td
+    {
+        border:1px solid black;
+        font-size: 125%;
+    }
+
+    th
+    {
+        border:1px solid black;
+        font-size: 150%;
+    }
+    </style>
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><u>Manage Passwds</u></th>
+            </tr>
+            <tbody>
+                <tr><td><a href="/addpasswd">Add a Passwd</a></td></tr>
+                <tr><td><a href="/delpasswd">Delete a Passwd</a></td></tr>
+                <tr><td><a href="/seepasswd">See all Passwds</a></td></tr>
+
+            </tbody>
+        </thead>
+    </table>
+
+     <p>
+
+    <p></p>
+    <h6><u><a href="/">&#x21AA;Return to Home page</a></u></h6>
+    <p></p>
+{% endblock %}

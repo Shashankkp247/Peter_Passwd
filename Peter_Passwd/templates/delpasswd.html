@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete Passwd
+{% endblock %}
+
+{% block body %}
+    <p>
+
+    </p>
+
+    <form action="/delpasswd" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="title" placeholder="Site/App name" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" autocomplete="off" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="passwd" placeholder="Passwd" type="password">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Delete</button>
+    </form>
+
+    <p></p>
+    <h6><u><a href="/">&#x21AA;Return to Home page</a></u></h6>
+    <p></p>
+    <h6><u><a href="/passwd">&#x21AA;Return to Passwd Manager</a></u></h6>
+    <p></p>
+{% endblock %}

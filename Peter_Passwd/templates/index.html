@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block body %}
+    <style>
+    table, td
+    {
+        border:1px solid black;
+        font-size: 125%;
+    }
+
+    th
+    {
+        border:1px solid black;
+        font-size: 150%;
+    }
+    </style>
+
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><u>MENU</u></th>
+            </tr>
+            <tbody>
+                <tr><td><a href="/whoami">whoami</a></td></tr>
+                <tr><td><a href="/passwd">passwd manager</a></td></tr>
+                <tr><td><a href="/change_passwd">Change your "PeterPasswd" account password</a></td></tr>
+                <tr><td><a href="/about">About the webapp</a></td></tr>
+                <tr><td><a href="/logout">Logout</a></td></tr>
+            </tbody>
+        </thead>
+    </table>
+{% endblock %}
